@@ -263,9 +263,10 @@
 
       animasi.style.display = "none";
 
-      setTimeout(function () {
+      document.addEventListener("click", function (event) {
         win.play();
-      }, 1000);
+      });
+
       btnKlik.onclick = function () {
         animasi.style.display = "block";
         win.play();
